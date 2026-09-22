@@ -15,13 +15,9 @@ Open [http://localhost:3000](http://localhost:3000). Pages: Home, Work, Experien
 
 ### Deploy on Vercel
 
-The website is in `website/`, not the Expo app at the repo root. In Vercel:
+Leave **Root Directory** empty (repo root). Vercel now builds `website/` and publishes `website/out`.
 
-1. Project → **Settings → General → Root Directory**
-2. Set Root Directory to `website`
-3. Redeploy
-
-If Root Directory stays empty, Visit may download Expo `index.ts` instead of opening the site.
+Do not set Root Directory to `website` while this `vercel.json` is in place.
 
 ## Run the React Native app
 
