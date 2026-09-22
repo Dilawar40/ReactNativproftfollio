@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root,
+html[data-theme="light"] {
+  --bg: #f3f1ea;
+  --fg: #111111;
+  --muted: #5c5852;
+  --line: #d9d4c8;
+  --card: #fffcf6;
+  --soft: #eae6dc;
+  --invert: #0b0b0b;
+  --invert-text: #f6f4ee;
+}
+
+html[data-theme="dark"] {
+  --bg: #080808;
+  --fg: #f4f4f1;
+  --muted: #9b9b96;
+  --line: #2a2a28;
+  --card: #111110;
+  --soft: #171716;
+  --invert: #f4f4f1;
+  --invert-text: #111;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-card: var(--card);
+  --color-soft: var(--soft);
+  --color-invert: var(--invert);
+  --color-invert-text: var(--invert-text);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), "Segoe UI", sans-serif;
+  font-feature-settings: "ss01" on, "cv11" on;
+}
+
+::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.serif {
+  font-family: var(--font-serif), "Times New Roman", serif;
+}
+
+.hairline {
+  height: 1px;
+  background: var(--line);
+}
+
+.cover-grid {
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
