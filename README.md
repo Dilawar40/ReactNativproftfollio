@@ -13,6 +13,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000). Pages: Home, Work, Experience, CV, Contact.
 
+### Deploy on Vercel
+
+The website is in `website/`, not the Expo app at the repo root. In Vercel:
+
+1. Project → **Settings → General → Root Directory**
+2. Set Root Directory to `website`
+3. Redeploy
+
+If Root Directory stays empty, Visit may download Expo `index.ts` instead of opening the site.
+
 ## Run the React Native app
 
 ```bash
