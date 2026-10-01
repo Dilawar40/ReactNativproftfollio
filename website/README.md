@@ -1,9 +1,13 @@
-# Dilawar Next.js portfolio
+# Portfolio website
 
-Web version of the same CV and app list.
+One page: hero, services, projects, process, about, contact.
 
 ```bash
+cd website
+npm install
 npm run dev
 ```
 
-Then open http://localhost:3000
+Open http://localhost:3000
+
+Edit your details in `src/data/site.js`. Edit projects in `src/data/projects.js`.

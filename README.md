@@ -11,7 +11,9 @@ cd website
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Pages: Home, Work, Experience, CV, Contact.
+Open [http://localhost:3000](http://localhost:3000). It is one page: hero, services, projects, process, about, and contact.
+
+Edit `website/src/data/site.js` and `website/src/data/projects.js` to change your details and projects.
 
 ### Deploy on Vercel
 
